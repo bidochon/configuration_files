@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 alias ls="ls -G"
 
 # Added by Canopy installer on 2014-04-08
@@ -51,4 +52,33 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 #alias __git_ps1="git branch 2>/dev/null | grep '*' | sed 's/* \(.*\)/(\1)/'"
 
 source /Users/j35/.bashrc
+=======
+# added by Anaconda3 5.3.0 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/j35/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/j35/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/j35/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/j35/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+alias cd_git="cd /Volumes/my_book_thunderbolt_duo/git/"
+
+source ~/.bashrc
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
+    # if not found in /usr/local/etc, try the brew --prefix location
+    [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
+        . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+}
+
+
+>>>>>>> 31adad444b4b9f9056b819ac9305267e3c6dc303
 
